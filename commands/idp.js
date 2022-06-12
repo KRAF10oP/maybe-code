@@ -1,0 +1,4 @@
+module.exports = [{
+name: "setupidp",
+aliases: ['setup-idp', 'idp'],    code: '$title[1;🛠IDP Manager (1/5)] $description[1;Which is the default IDP Channel?]                         $footer[1;Reply with "cancel" to stop the process.]                            $color[1;00FF99] $awaitMessages[$channelId;$authorId;1m;everything;idpchannel;{newEmbed: {description:You Failed To Select A Channel In Time. Try Again!} {color:FF0000}}]      $suppressErrors[An error occured while executing this command please report this issue on our support server.]      $onlyPerms[admin;{newEmbed:{description:You Need Admin Perms To Execute This Command.} {color:RED}}]              '
+}]

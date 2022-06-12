@@ -1,0 +1,5 @@
+module.exports = [{
+name: "remove idproletransfer",
+aliases: "delete idproletransfer",
+code: `$resetServerVar[idpchannelid]  $resetServerVar[idproletransferid] $wait[1s] $deleteMessage[$getServerVar[idproletransferid];$getServerVar[idpchannelid]]                               $resetServerVar[idplogs] $resetServerVar[idpname] $resetServerVar[idprole] $resetServerVar[idproletransfer]  $editIn[2s;{newEmbed: {description:<:Ccheck:980361177668390912> **Done**}{color:00FF99}}] $description[1;**Processing**...] $color[1;00FF99]         $onlyIf[$message[1]!=<@$authorID>, **You Need To Provide Name Which Was Asked When You Did Setup.]                        $onlyPerms[admin;<@$authorID>, **You Need Admin Perms To Execute This Command.**]    $onlyBotPerms[managemessages;<@$authorID>, **I Need Manage_Messages perms to execute this command] $suppressErrors[An Error Occured]`
+}]
