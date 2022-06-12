@@ -1,11 +1,11 @@
 module.exports = [{
-name: "<@945533660654882836>",
+name: "<@$clientID>",
 $if: "v4",
 nonPrefixed: true,
 code: `
 $color[1;#2F3136]
 $author[1;Scrims Mod;$userAvatar[938345769486925885]]
-$description[1;**Hello <@$authorID>, I am <@945533660654882836> i was made to help esport servers by my commands.
+$description[1;**Hello <@$authorID>, I am <@$clientID> i was made to help esport servers by my commands.
 My prefix for this server is \`.\`
 
 About Me -
