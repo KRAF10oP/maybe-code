@@ -618,7 +618,7 @@ loader.setColors({
 //Status
 
 bot.status({
-	text: "BGMI with $allMembersCount Teammates!",
+	text: "Powered By @Flank",
 	type: "PLAYING",
 	status: "online"
 })
