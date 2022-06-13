@@ -4,7 +4,7 @@ $if: "v4",
 nonPrefixed: true,
 code: `
 $color[1;#2F3136]
-$author[1;Scrims Mod;$userAvatar[938345769486925885]]
+$author[1;$userTag[$clientID];$userAvatar[$clientID]]
 $description[1;**Hello <@$authorID>, I am <@$clientID> i was made to help esport servers by my commands.
 My prefix for this server is \`a!\`
 
