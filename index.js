@@ -1,8 +1,8 @@
 const keepAlive = require('./server.js')
 const aoijs = require("aoi.js")
 const bot = new aoijs.Bot({
-token: "OTQ1NTMzNjYwNjU0ODgyODM2.GLB3mQ.d5BTkIu646I_tjkNCzKMVuIe789Bofesrcyaz0", //Discord Bot Token
-prefix: ".", //Discord Bot Prefix
+token: "token: "OTg1NTg3MDI4NDA0MDc2NTg0.GsZhJ6._Vx8iQCTY6nGGj7WqSnnahkaVW-XlaEpcQguZI", //Discord Bot Token
+prefix: "a!", //Discord Bot Prefix
 intents: "all" //Discord Intents
 })
 //Callbacks
@@ -618,7 +618,7 @@ loader.setColors({
 //Status
 
 bot.status({
-	text: "BGMI with $allMembersCount Teammates!",
+	text: "Powered By @Flank",
 	type: "PLAYING",
 	status: "online"
 })
