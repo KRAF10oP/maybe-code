@@ -1,0 +1,4 @@
+module.exports = [{
+name: "tourneyinfo",
+aliases: "tourney-info",                    code: '$description[1;**Running Tourney Names** <:btt_join:956507122357633045>\n**Tourney Name - $getServerVar[tourneyname]**]               $color[1;GREEN]   $onlyIf[$getServerVar[tourneyname]!=0;{newEmbed: {description:**This server does not have a running tournament, You Can Create One Using \`tourneychannels\` command.**}{color:00FF99}}]     $onlyPerms[manageserver;{newEmbed: {title:ERROR 0069}{field:ACCESS DENIED:**YOU NEED MANAGE_SERVER PERMS TO EXECUTE THIS COMMAND**}{color:RED}}]       $suppressErrors[An error occured]'
+}]
