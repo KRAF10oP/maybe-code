@@ -9,7 +9,7 @@ code: ` $setServerVar[smchannelid;$channelID] $setServerVar[smconfigid;$get[conf
 3️⃣ **Number Of Slots**
 $getServerVar[smslots1]
 4️⃣ **Number Of Tags**
-$getServerVar[smtags1]} {footer:React with emojis to setup}{color:GREEN}};{actionRow:{button:1️⃣:2:smone_$authorID:no}{button:2️⃣:2:smtwo_$authorID:no}{button:3️⃣:2:smthree_$authorID:no}{button:4️⃣:2:smfour_$authorID:no}{button:➡️:2:smright_$authorID:no}}{actionRow: {button:Save:success:smsave_$authorID:no}{button:Save & Start Scrims:success:smsaveandstart_$authorID:no}};;;everyone;;yes]] $onlyIf[$getServerVar[smconfigid]==0;{newEmbed: {description:**Config is already running somewhere make sure to save it before running another config.**\n\n**Can’t Find Config Message**❓\nUse \`resetconfig\` **command.**}{color:00FF99}}]   $onlyBotPerms[manageroles;{newEmbed:{description:<:btt_EC_error:956514158759776256> | **$userTag[$authorID]** Bot Requires Manage Role permission(s) to run this command.}{color:2F3136}}]
+$getServerVar[smtags1]} {footer:React with emojis to setup}{color:GREEN}};{actionRow:{button:1️⃣:2:scrimone_$authorID:no}{button:2️⃣:2:smtwo_$authorID:no}{button:3️⃣:2:smthree_$authorID:no}{button:4️⃣:2:smfour_$authorID:no}{button:➡️:2:smright_$authorID:no}}{actionRow: {button:Save:success:smsave_$authorID:no}{button:Save & Start Scrims:success:smsaveandstart_$authorID:no}};;;everyone;;yes]] $onlyIf[$getServerVar[smconfigid]==0;{newEmbed: {description:**Config is already running somewhere make sure to save it before running another config.**\n\n**Can’t Find Config Message**❓\nUse \`resetconfig\` **command.**}{color:00FF99}}]   $onlyBotPerms[manageroles;{newEmbed:{description:<:btt_EC_error:956514158759776256> | **$userTag[$authorID]** Bot Requires Manage Role permission(s) to run this command.}{color:2F3136}}]
 $onlyBotPerms[managechannel;{newEmbed:{description:<:btt_EC_error:956514158759776256> | **$userTag[$authorID]** Bot Requires Manage Channel permission(s) to run this command.}{color:2F3136}}] $onlyIf[$getServerVar[smsetup]==1;<@$authorID>, This server is not setuped. Use \`setup\` first.]     $onlyPerms[manageserver;<@$authorID>, You Need Manage Server Permission To Execute This Command.]
 $suppressErrors[An Error Occured] `
 },
@@ -19,7 +19,7 @@ type: "interaction",
 prototype: "button",
 code: `$awaitMessages[$channelID;$authorID;1m;everything;smreg1;<@$interactionData[author.id]>     {newEmbed: {description:You Failed To Select Registration Channel In Time, Try Again!}{color:RED}}{delete:2s}]  $interactionReply[;{newEmbed: {description:Enter registration channel.}{color:GREEN}}] $onlyif[$advancedTextSplit[$interactionData[customId];_;2]==$interactionData[author.id];{"embeds":"{newEmbed:{description:You cannot use this button!}{color:RED}}", "ephemeral":true, "options":{"interaction":true}
 }]
-$onlyIf[$advancedTextSplit[$interactionData[customId];_;1]==smone;]     $suppressErrors[An Error Occured]`
+$onlyIf[$advancedTextSplit[$interactionData[customId];_;1]==scrimone;]     $suppressErrors[An Error Occured]`
 },
 {
 type: "interaction",
