@@ -1,8 +1,8 @@
 const keepAlive = require('./server.js')
 const aoijs = require("aoi.js")
 const bot = new aoijs.Bot({
-token: "MTEwODc5MzU3OTI2ODIzMTE3MA.Gtet_R.JVvne_pj8KmEZp9wK7JwzIGofTyu2cCsvSMxNY", //Discord Bot Token
-prefix: "-", //Discord Bot Prefix
+token: "MTExMDk4ODAwNjU4NTc5NDU5MA.Gi8lWs.PGzwRaBlXdrd00Z_K9BNd8c2SxAiL8kvbJMo6Q", //Discord Bot Token
+prefix: "?", //Discord Bot Prefix
 intents: "all" //Discord Intents
 })
 //Callbacks
